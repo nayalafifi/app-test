@@ -7,7 +7,7 @@ import streamlit as st
 backgroundColor = "#add8e6"
 st.title("Netflix TV Shows and Movies")
 st.header("An analysis on the IMBD Scores")
-st.image(taylor-swift-eras-tour-032023-1-e1f1db4f3659494d9f40b35cc53736ca.jpg)
+st.image("taylor-swift-eras-tour-032023-1-e1f1db4f3659494d9f40b35cc53736ca.jpg")
 
 st.radio('What is your favorite genre?',['Comedy','Drama','Mystery','Crime'])
 # st.selectbox('Pick your player of the tournament',['Messi','Mbappe','Ronaldo','Neymar','Hakimi','Di Maria','Bellingham','Modric'])
