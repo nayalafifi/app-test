@@ -1,4 +1,3 @@
-%%writefile app.py
 
 import streamlit as st
 st.title ("this is the app title")
