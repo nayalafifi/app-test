@@ -5,12 +5,12 @@ import seaborn as sns
 # import hvplot.pandas
 import streamlit as st
 backgroundColor = "#add8e6"
-st.title("2022 World Cup Stats")
-st.header("An analysis on the 2022 world cup")
+st.title("Netflix TV Shows and Movies")
+st.header("An analysis on the IMBD Scores")
 
-st.radio('Pick your favorite team',['Argentina','Brazil','France','Germany','Morocco','Spain'])
-st.selectbox('Pick your player of the tournament',['Messi','Mbappe','Ronaldo','Neymar','Hakimi','Di Maria','Bellingham','Modric'])
-st.select_slider('How would you rate this tournament? ', ['Bad', 'Good', 'Excellent'])
+st.radio('What is your favorite genre?',['Comedy','Drama','Mystery','Crime'])
+# st.selectbox('Pick your player of the tournament',['Messi','Mbappe','Ronaldo','Neymar','Hakimi','Di Maria','Bellingham','Modric'])
+# st.select_slider('How would you rate this tournament? ', ['Bad', 'Good', 'Excellent'])
 
 df = pd.read_csv('Netflix TV Shows and Movies.csv')
 df.head()
