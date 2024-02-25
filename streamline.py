@@ -12,7 +12,7 @@ st.radio('What is your favorite genre?',['Comedy','Drama','Mystery','Crime'])
 # st.selectbox('Pick your player of the tournament',['Messi','Mbappe','Ronaldo','Neymar','Hakimi','Di Maria','Bellingham','Modric'])
 # st.select_slider('How would you rate this tournament? ', ['Bad', 'Good', 'Excellent'])
 
-df = pd.read_csv('Netflix TV Shows and Movies.csv')
+df = pd.read_csv('taylor_swift_spotify.csv')
 df.head()
 df.columns
 sampled_df = df.sample(n=1000)
