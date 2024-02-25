@@ -13,17 +13,32 @@ st.selectbox('Pick your player of the tournament',['Messi','Mbappe','Ronaldo','N
 st.select_slider('How would you rate this tournament? ', ['Bad', 'Good', 'Excellent'])
 
 df = pd.read_csv('2022worldcup.csv')
-import altair as alt
 
-df = pd.DataFrame(
-   np.random.randn(500, 3),
-   columns=['x','y','z'])
 
-c = alt.Chart(df).mark_circle().encode(
-   x='x' , y='y' , size='z', color='z', tooltip=['x', 'y', 'z'])
-st.altair_chart(c, use_container_width=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import altair as alt
+
+# df = pd.DataFrame(
+#    np.random.randn(500, 3),
+#    columns=['x','y','z'])
+
+# c = alt.Chart(df).mark_circle().encode(
+#    x='x' , y='y' , size='z', color='z', tooltip=['x', 'y', 'z'])
+# st.altair_chart(c, use_container_width=True)
 
 # import seaborn as sns
-sampled_df = df.sample(n=1000)
-sampled_df_10_columns = sampled_df.iloc[:, :10]
-sns.pairplot(sampled_df_10_columns)
+# sampled_df = df.sample(n=1000)
+# sampled_df_10_columns = sampled_df.iloc[:, :10]
+# sns.pairplot(sampled_df_10_columns)
