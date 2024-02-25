@@ -1,7 +1,5 @@
 import streamlit as st
 import numpy as np
-streamlit config set [theme]
-[theme]
 backgroundColor = "#add8e6"
 st.title ("2022 World Cup Stats")
 st.header("An analysis on the 2022 world cup")
