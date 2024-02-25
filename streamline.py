@@ -1,3 +1,5 @@
+pip install streamlit --quiet
+pip install pyngrok --quiet
 import pandas as pd
 import numpy as np
 import seaborn as sns
