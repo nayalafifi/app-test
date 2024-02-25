@@ -15,6 +15,9 @@ st.radio('What is your favorite genre?',['Comedy','Drama','Mystery','Crime'])
 df = pd.read_csv('Netflix TV Shows and Movies.csv')
 df.head()
 df.columns
+sampled_df = df.sample(n=1000)
+sampled_df_10_columns = sampled_df.iloc[:, :10]
+sns.pairplot(sampled_df_10_columns)
 
 
 
