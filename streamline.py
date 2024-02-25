@@ -13,3 +13,4 @@ st.selectbox('Pick your player of the tournament',['Messi','Mbappe','Ronaldo','N
 st.select_slider('How would you rate this tournament? ', ['Bad', 'Good', 'Excellent'])
 
 df = pd.read_csv('2022worldcup.csv')
+df.head()
