@@ -11,3 +11,4 @@ st.radio('Pick your favorite team',['Argentina','Brazil','France','Germany','Mor
 st.selectbox('Pick your player of the tournament',['Messi','Mbappe','Ronaldo','Neymar','Hakimi','Di Maria','Bellingham','Modric'])
 st.select_slider('How would you rate this tournament? ', ['Bad', 'Good', 'Excellent'])
 
+df = pd.read_csv('2022worldcup.csv')
