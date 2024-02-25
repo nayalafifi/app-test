@@ -16,6 +16,8 @@ df = pd.read_csv('taylor_swift_spotify.csv')
 df.head()
 df.columns
 
+sns.distplot(df['popularity'])
+
 # Correlation Heatmap of Audio Features
 audio_features = df[['acousticness', 'danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'valence']]
 audio_correlation = audio_features.corr()
