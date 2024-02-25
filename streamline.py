@@ -5,11 +5,11 @@ import seaborn as sns
 # import hvplot.pandas
 import streamlit as st
 backgroundColor = "#add8e6"
-st.title("Netflix TV Shows and Movies")
-st.header("An analysis on the IMBD Scores")
+st.title("Taylor Swift Spotify Popularity")
+st.header("An analysis of popularity of Taylor Swift music")
 st.image("taylor-swift-eras-tour-032023-1-e1f1db4f3659494d9f40b35cc53736ca.jpg")
 
-st.radio('What is your favorite genre?',['Comedy','Drama','Mystery','Crime'])
+# st.radio('What is your favorite genre?',['Comedy','Drama','Mystery','Crime'])
 # st.selectbox('Pick your player of the tournament',['Messi','Mbappe','Ronaldo','Neymar','Hakimi','Di Maria','Bellingham','Modric'])
 # st.select_slider('How would you rate this tournament? ', ['Bad', 'Good', 'Excellent'])
 
