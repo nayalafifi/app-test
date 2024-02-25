@@ -1,7 +1,7 @@
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import streamlit as st
 backgroundColor = "#add8e6"
 st.title ("2022 World Cup Stats")
@@ -23,7 +23,7 @@ c = alt.Chart(df).mark_circle().encode(
    x='x' , y='y' , size='z', color='z', tooltip=['x', 'y', 'z'])
 st.altair_chart(c, use_container_width=True)
 
-import seaborn as sns
+# import seaborn as sns
 sampled_df = df.sample(n=1000)
 sampled_df_10_columns = sampled_df.iloc[:, :10]
 sns.pairplot(sampled_df_10_columns)
