@@ -13,4 +13,12 @@ st.selectbox('Pick your player of the tournament',['Messi','Mbappe','Ronaldo','N
 st.select_slider('How would you rate this tournament? ', ['Bad', 'Good', 'Excellent'])
 
 df = pd.read_csv('2022worldcup.csv')
-df.head()
+import altair as alt
+
+df = pd.DataFrame(
+   np.random.randn(500, 3),
+   columns=['x','y','z'])
+
+c = alt.Chart(df).mark_circle().encode(
+   x='x' , y='y' , size='z', color='z', tooltip=['x', 'y', 'z'])
+st.altair_chart(c, use_container_width=True)
