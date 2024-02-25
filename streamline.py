@@ -14,12 +14,8 @@ st.selectbox('Pick your player of the tournament',['Messi','Mbappe','Ronaldo','N
 st.select_slider('How would you rate this tournament? ', ['Bad', 'Good', 'Excellent'])
 
 df = pd.read_csv('2022worldcup.csv')
-
-sampled_df = df.sample(n=100)
-sampled_df_10_columns = sampled_df.iloc[:,:5]
-sns.pairplot(sampled_df_10_columns)
-
-
+df.head()
+df.columns
 
 
 
