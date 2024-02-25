@@ -16,10 +16,13 @@ df = pd.read_csv('taylor_swift_spotify.csv')
 df.head()
 df.columns
 
-sampled_df = df.sample(n=500)
-sampled_df_10_columns = sampled_df.iloc[:, :5]
-sns.pairplot(sampled_df_10_columns)
-
+# Correlation Heatmap of Audio Features
+audio_features = df[['acousticness', 'danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'valence']]
+audio_correlation = audio_features.corr()
+plt.figure(figsize=(12, 8))
+sns.heatmap(audio_correlation, annot=True, cmap='coolwarm', fmt=".2f")
+plt.title('Correlation Matrix of Audio Features')
+plt.show()
 
 
 
