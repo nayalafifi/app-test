@@ -1,5 +1,5 @@
-$ pip install streamlit --quiet
-$ pip install pyngrok --quiet
+# $ pip install streamlit --quiet
+# $ pip install pyngrok --quiet
 import streamlit as st
 import numpy as np
 backgroundColor = "#add8e6"
