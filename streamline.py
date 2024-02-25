@@ -26,9 +26,17 @@ sns.heatmap(audio_correlation, annot=True, cmap='coolwarm', fmt=".2f")
 plt.title('Correlation Matrix of Audio Features')
 plt.show()
 
+# Top Most Popular Albums
+top_albums = df.groupby('album')['popularity'].mean().sort_values(ascending=False).head(10)
 
+# Reverse the order of the DataFrame
+top_albums = top_albums[::-1]
 
-
+top_albums.plot(kind='barh', color='skyblue') 
+plt.title('Top Albums by Popularity')
+plt.xlabel('Average Popularity')  
+plt.ylabel('Album')  
+plt.show()
 
 
 
