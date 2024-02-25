@@ -20,14 +20,17 @@ fig, ax = plt.subplots()
 sns.distplot(df['popularity'], ax=ax)
 st.pyplot(fig)
 
-# Correlation Heatmap of Audio Features
-audio_features = df[['acousticness', 'danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'valence']]
-audio_correlation = audio_features.corr()
+# # Correlation Heatmap of Audio Features
+# audio_features = df[['acousticness', 'danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'valence']]
+# audio_correlation = audio_features.corr()
+# plt.figure(figsize=(12, 8))
+# sns.heatmap(audio_correlation, annot=True, cmap='coolwarm', fmt=".2f")
+# plt.title('Correlation Matrix of Audio Features')
+# plt.show()
 plt.figure(figsize=(12, 8))
 sns.heatmap(audio_correlation, annot=True, cmap='coolwarm', fmt=".2f")
 plt.title('Correlation Matrix of Audio Features')
-plt.show()
-
+st.pyplot()  # This will display the heatmap
 # Top Most Popular Albums
 top_albums = df.groupby('album')['popularity'].mean().sort_values(ascending=False).head(10)
 
