@@ -15,6 +15,9 @@ st.select_slider('How would you rate this tournament? ', ['Bad', 'Good', 'Excell
 
 df = pd.read_csv('2022worldcup.csv')
 
+sampled_df = df.sample(n=1000)
+sampled_df_10_columns = sampled_df.iloc[:, :10]
+sns.pairplot(sampled_df_10_columns)
 
 
 
