@@ -1,7 +1,7 @@
 
 import pandas as pd
 import numpy as np
-
+import matplotlib.pyplot as plt
 import streamlit as st
 backgroundColor = "#add8e6"
 st.title ("2022 World Cup Stats")
