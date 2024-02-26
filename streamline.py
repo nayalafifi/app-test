@@ -24,6 +24,24 @@ df = pd.read_csv('taylor_swift_spotify.csv')
 df.head()
 df.columns
 
+## Description of Dataset
+
+num = st.number_input('No of Rows',5,10)
+st.dataframe(df.head(num))
+
+### Description of the dataset
+
+st.dataframe(df.describe())
+
+if st.button("Show Describe Code"):
+        code = '''df.describe()'''
+        st.code(code, language='python')
+
+if st.button("Generate Report"):
+  import streamlit as st
+  import streamlit.components.v1 as components
+
+
 st.markdown("## Visualization")
 
 tab1, tab2 = st.tabs(["Line Chart", "Bar Chart"])
