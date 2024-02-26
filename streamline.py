@@ -30,7 +30,7 @@ tab1, tab2 = st.tabs(["Line Chart", "Bar Chart"])
 
 tab1.subheader("Line Chart")
 # Display a line chart for the selected variables
-tab1.line_chart(data=df, x="energy", y="popularity, width=0, height=0, use_container_width=True)
+tab1.line_chart(data=df, x="energy", y="popularity", width=0, height=0, use_container_width=True)
 
 tab2.subheader("Bar Chart")
 # Display a bar chart for the selected variables
