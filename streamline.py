@@ -9,7 +9,7 @@ st.header("An analysis of popularity of Taylor Swift music")
 st.image("taylor-swift-eras-tour-032023-1-e1f1db4f3659494d9f40b35cc53736ca.jpg")
 st.header("This dataset consist of data from Spotify's API on all albums listed on Spotify for Taylor Swift.")
 
-st.radio('What is your favorite album?',['reputation','1989','Folklore','Red','Fearless','Speak Now','evermore','Midnights'])
+st.radio('What is your favorite album?',['reputation','1989 (Taylor's version)','folklore','Red (Taylor's version)','Fearless (Taylor's version)','Speak Now (Taylor's version)','evermore','Midnights'])
 st.selectbox('Pick your favorite song',['Blank Space','Cardigan','Ready for it...?','Shake it Off','Red'])
 st.select_slider('How would you rate her music? ', ['Bad', 'Meh', 'Good', 'Excellent'])
 
