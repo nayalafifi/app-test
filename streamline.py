@@ -14,6 +14,10 @@ st.selectbox('Pick your favorite song',['Blank Space','Cardigan','Ready for it..
 st.select_slider('How would you rate her music? ', ['Bad', 'Meh', 'Good', 'Excellent'])
 
 st.header("Now lets move to the analysis!")
+
+# Create a sidebar header and a separator
+st.sidebar.header("Dashboard")
+st.sidebar.markdown("---")
                                         
 df = pd.read_csv('taylor_swift_spotify.csv')
 df.head()
