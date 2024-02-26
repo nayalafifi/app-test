@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-# import hvplot.pandas
 import streamlit as st
 
 st.title("Taylor Swift Spotify Popularity")
