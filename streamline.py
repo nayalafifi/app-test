@@ -4,7 +4,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 # import hvplot.pandas
 import streamlit as st
-backgroundColor = "#add8e6"
+[theme]
+primaryColor="#F63366"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="sans serif"
+
+
 st.title("Taylor Swift Spotify Popularity")
 st.header(":violet[An analysis of popularity of Taylor Swift music]")
 st.image("taylor-swift-eras-tour-032023-1-e1f1db4f3659494d9f40b35cc53736ca.jpg")
