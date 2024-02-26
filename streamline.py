@@ -42,7 +42,9 @@ plt.xlabel('Average Popularity')
 plt.ylabel('Album')  
 st.pyplot(fig)
 
-
+sampled_df = df.sample(n=500)
+sampled_df_10_columns = sampled_df.iloc[:, :10]
+sns.pairplot(sampled_df_10_columns)
 
 
 
