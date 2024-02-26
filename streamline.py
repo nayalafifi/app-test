@@ -18,10 +18,23 @@ st.header("Now lets move to the analysis!")
 # Create a sidebar header and a separator
 st.sidebar.header("Dashboard")
 st.sidebar.markdown("---")
-                                        
+
+
 df = pd.read_csv('taylor_swift_spotify.csv')
 df.head()
 df.columns
+
+st.markdown("## Visualization")
+
+tab1, tab2 = st.tabs(["Line Chart", "Bar Chart"])
+
+tab1.subheader("Line Chart")
+# Display a line chart for the selected variables
+tab1.line_chart(data=df, x="energy", y="popularity, width=0, height=0, use_container_width=True)
+
+tab2.subheader("Bar Chart")
+# Display a bar chart for the selected variables
+tab2.bar_chart(data=df, x="energy", y="popularity", use_container_width=True)
 
 fig, ax = plt.subplots()
 sns.distplot(df['popularity'], ax=ax)
