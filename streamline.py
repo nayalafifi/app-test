@@ -5,7 +5,7 @@ import seaborn as sns
 import streamlit as st
 
 st.title("Taylor Swift Spotify Popularity")
-st.header("An analysis of popularity of Taylor Swift music")
+st.header("An analysis of Taylor Swift's music")
 st.image("taylor-swift-eras-tour-032023-1-e1f1db4f3659494d9f40b35cc53736ca.jpg")
 st.header("This dataset consist of data from Spotify's API on all albums listed on Spotify for Taylor Swift.")
 
