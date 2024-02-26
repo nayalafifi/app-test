@@ -5,7 +5,7 @@ import seaborn as sns
 import streamlit as st
 
 st.title("Taylor Swift Spotify Popularity")
-st.header(":violet[An analysis of popularity of Taylor Swift music]")
+st.header("An analysis of popularity of Taylor Swift music")
 st.image("taylor-swift-eras-tour-032023-1-e1f1db4f3659494d9f40b35cc53736ca.jpg")
 
 st.radio('What is your favorite album?',['reputation','1989','Folklore','Red','Fearless','Speak Now','evermore','Midnights'])
