@@ -13,7 +13,7 @@ st.radio('What is your favorite album?',['reputation','1989','Folklore','Red','F
 st.selectbox('Pick your favorite song',['Blank Space','Cardigan','Ready for it...?','Shake it Off','Red'])
 st.select_slider('How would you rate her music? ', ['Bad', 'Meh', 'Good', 'Excellent'])
 
-st.markdown(":pink[Now lets move to the analysis]")
+st.header(":red[Now lets move to the analysis]")
                                         
 df = pd.read_csv('taylor_swift_spotify.csv')
 df.head()
