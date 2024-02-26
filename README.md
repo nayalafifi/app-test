@@ -1,3 +1,1 @@
-import streamlit as st
-
-st.title("Taylor Swift Spotify Popularity")
+Taylor Swift spotify statistics App
