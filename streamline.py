@@ -22,6 +22,7 @@ st.sidebar.markdown("---")
 
 df = pd.read_csv('taylor_swift_spotify.csv')
 df.head()
+st.markdown("## Columns")
 df.columns
 
 ## Description of Dataset
