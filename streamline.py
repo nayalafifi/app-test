@@ -7,7 +7,7 @@ import streamlit as st
 st.title("Taylor Swift Spotify Popularity")
 st.header("An analysis of popularity of Taylor Swift music")
 st.image("taylor-swift-eras-tour-032023-1-e1f1db4f3659494d9f40b35cc53736ca.jpg")
-st.markdown("This dataset consist of data from Spotify's API on all albums listed on Spotify for Taylor Swift. I set up the dataset to update monthly so that if any albums get added it will get added to the dataset too. At first it may look like there are song duplicates but I checked and all song IDs are unique.
+st.header("This dataset consist of data from Spotify's API on all albums listed on Spotify for Taylor Swift. I set up the dataset to update monthly so that if any albums get added it will get added to the dataset too. At first it may look like there are song duplicates but I checked and all song IDs are unique.
 
 The columns in this dataset are:
 
